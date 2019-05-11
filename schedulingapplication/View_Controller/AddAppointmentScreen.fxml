@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingapplication.View_Controller.AddAppointmentScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="11.0" prefHeight="484.0" prefWidth="590.0">
+         <children>
+            <Label fx:id="mainLabel" layoutX="172.0" layoutY="33.0" styleClass="header" stylesheets="@screens.css" text="Add Appointment" />
+            <Button layoutX="157.0" layoutY="409.0" mnemonicParsing="false" onAction="#submit" stylesheets="@screens.css" text="Submit" />
+            <Button layoutX="323.0" layoutY="409.0" mnemonicParsing="false" onAction="#cancel" stylesheets="@screens.css" text="Cancel" />
+            <Label layoutX="30.0" layoutY="100.0" stylesheets="@screens.css" text="Customer" />
+            <Label layoutX="306.0" layoutY="100.0" stylesheets="@screens.css" text="Consultant" />
+            <Label layoutX="30.0" layoutY="150.0" stylesheets="@screens.css" text="Title" />
+            <Label layoutX="30.0" layoutY="200.0" stylesheets="@screens.css" text="Description" />
+            <Label layoutX="30.0" layoutY="300.0" stylesheets="@screens.css" text="Contact" />
+            <Label layoutX="30.0" layoutY="350.0" stylesheets="@screens.css" text="URL" />
+            <Label layoutX="30.0" layoutY="250.0" stylesheets="@screens.css" text="Location" />
+            <TextField fx:id="title" layoutX="132.0" layoutY="150.0" />
+            <TextField fx:id="description" layoutX="132.0" layoutY="200.0" />
+            <TextField fx:id="location" layoutX="132.0" layoutY="250.0" />
+            <TextField fx:id="contact" layoutX="132.0" layoutY="300.0" />
+            <TextField fx:id="urlText" layoutX="132.0" layoutY="350.0" />
+            <DatePicker fx:id="calendar" layoutX="400.0" layoutY="200.0" prefHeight="25.0" prefWidth="149.0" promptText="Select a date" />
+            <Label layoutX="306.0" layoutY="150.0" stylesheets="@screens.css" text="Type" />
+            <Label layoutX="306.0" layoutY="200.0" stylesheets="@screens.css" text="Date" />
+            <Label layoutX="306.0" layoutY="250.0" stylesheets="@screens.css" text="Hour" />
+            <Label layoutX="306.0" layoutY="300.0" stylesheets="@screens.css" text="Duration (in minutes)" />
+            <ChoiceBox fx:id="type" layoutX="400.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" />
+            <ChoiceBox fx:id="hour" layoutX="359.0" layoutY="250.0" prefHeight="25.0" prefWidth="62.0" />
+            <ChoiceBox fx:id="duration" layoutX="468.0" layoutY="300.0" prefHeight="25.0" prefWidth="81.0" />
+            <ChoiceBox fx:id="customer" layoutX="132.0" layoutY="100.0" prefHeight="25.0" prefWidth="149.0" />
+            <ChoiceBox fx:id="consultant" layoutX="400.0" layoutY="100.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="437.0" layoutY="250.0" stylesheets="@screens.css" text="Min" />
+            <ChoiceBox fx:id="min" layoutX="487.0" layoutY="250.0" prefHeight="25.0" prefWidth="62.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

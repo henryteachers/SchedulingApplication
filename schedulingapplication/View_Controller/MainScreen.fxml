@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingapplication.View_Controller.MainScreenController">
+   <children>
+      <Label fx:id="mainLabel" layoutX="141.0" layoutY="47.0" styleClass="header" stylesheets="@screens.css" text="Scheduling Main Menu">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="110.0" mnemonicParsing="false" onAction="#customers" prefHeight="25.0" prefWidth="88.0" stylesheets="@screens.css" text="Customers" wrapText="true" />
+      <Label layoutX="230.0" layoutY="110.0" stylesheets="@screens.css" text="Add, Update or Delete Customers" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onAction="#appointments" prefHeight="25.0" prefWidth="88.0" stylesheets="@screens.css" text="Appointments" wrapText="true" />
+      <Label layoutX="230.0" layoutY="160.0" stylesheets="@screens.css" text="Add, Update or Delete Appointments" />
+      
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="210.0" mnemonicParsing="false" onAction="#calendar" prefHeight="25.0" prefWidth="88.0" stylesheets="@screens.css" text="Calendar" wrapText="true" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#reports" prefHeight="25.0" prefWidth="88.0" stylesheets="@screens.css" text="Reports" wrapText="true" />
+      <Label layoutX="230.0" layoutY="210.0" stylesheets="@screens.css" text="Monthly or Weekly Calendar" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="310.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="88.0" stylesheets="@screens.css" text="Exit" />
+      <Label layoutX="230.0" layoutY="260.0" stylesheets="@screens.css" text="Choice of Three Reports" />
+      <Label layoutX="230.0" layoutY="310.0" stylesheets="@screens.css" text="Exit the Scheduling Application" />
+   </children>
+</AnchorPane>

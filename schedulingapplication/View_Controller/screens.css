@@ -1,0 +1,18 @@
+.button {
+    -fx-contentDisplay: CENTER;    
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 120px;
+}
+
+.label {
+    -fx-font-size: 16px;
+}
+
+.header {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+

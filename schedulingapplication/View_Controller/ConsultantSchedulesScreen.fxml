@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="schedulingapplication.View_Controller.ConsultantSchedulesScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="979.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@screens.css" />
+         </stylesheets>
+         <children>
+            <Label fx:id="mainLabel" layoutX="276.0" layoutY="33.0" styleClass="header" stylesheets="@screens.css" text="Consultant Schedules Report" />
+            <TableView fx:id="appointmentTable" layoutX="25.0" layoutY="95.0" prefHeight="200.0" prefWidth="925.0">
+               <columns>
+                  <TableColumn fx:id="consultant" prefWidth="118.0" text="Consultant" />
+                  <TableColumn fx:id="start" prefWidth="126.0" text="Start" />
+                  <TableColumn fx:id="end" prefWidth="122.0" text="End" />
+                  <TableColumn fx:id="type" prefWidth="109.0" text="Type" />
+                  <TableColumn fx:id="customer" prefWidth="112.0" text="Customer" />
+                  <TableColumn fx:id="title" prefWidth="54.0" text="Title" />
+                  <TableColumn fx:id="description" prefWidth="95.0" text="Description" />
+                  <TableColumn fx:id="location" prefWidth="78.0" text="Location" />
+                  <TableColumn fx:id="contact" prefWidth="69.0" text="Contact" />
+                  <TableColumn fx:id="url" prefWidth="41.0" text="URL" />
+               </columns>
+            </TableView>
+            <Button layoutX="419.0" layoutY="315.0" onAction="#reportsMenu" stylesheets="@screens.css" text="Reports Menu" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
